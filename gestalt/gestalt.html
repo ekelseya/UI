@@ -3,22 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <title>User Experience and User Interaction</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Allura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Gestalt Psychology and User Centered Design</h1>
+<nav>
+    <ul>
+        <li class="me">eKelseya</li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Articles</a></li>
+        <li><a href="/index.html">Home</a></li>
+    </ul>
+</nav>
+<div class="sidenav">
+        <strong>Topics</strong>
+        <a href="#intro">Gestalt Psychology</a>
+        <a href="#perception">Human Perception</a>
+        <a href="#proximity">Proximity</a>
+        <a href="#similarity">Similarity Grouping</a>
+        <a href="#fate">Common Fate</a>
+        <a href="#synchrony">Synchrony</a>
+        <a href="#symmetry">Symmetry</a>
+        <a href="#continuation">Continuation</a>
+        <a href="#connect">Connectedness</a>
+        <a href="#induced">Induced Grouping</a>
+        <a href="#conclusion">Final Thoughts</a>
+        <a href="references.html">References</a>
+</div>
+<div class="main">
+    <h1><a id="intro" class="anchor">Gestalt Psychology and User Centered Design</a></h1>
+    <a title="Fibonacci / CC BY-SA (http://creativecommons.org/licenses/by-sa/3.0/)"
+       href="https://commons.wikimedia.org/wiki/File:Kanizsa_triangle.svg">
+        <img width="200" style="float: left" alt="Kanizsa triangle"
+             src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Kanizsa_triangle.svg/512px-Kanizsa_triangle.svg.png"></a>
     <p>
         In his book <a href="https://mitpress.mit.edu/books/design-everyday-things">
         The Design of Everyday Things</a>, Don Norman says “good designs fit our needs so
-        well that the design is invisible.” [1] Author Steve Krug argues that good design
+        well that the design is invisible.” Author Steve Krug argues that good design
         should lighten the user’s cognitive load in
         <a href="https://www.peachpit.com/store/dont-make-me-think-revisited-a-common-sense-approach-9780321965516">
             Don’t Make Me Think
-        </a> [2]. User Interaction and User Experience (UI/UX) Design uses the principles of
+        </a>. User Interaction and User Experience (UI/UX) Design uses the principles of
         human perception to create designs that are intuitive to the point of being invisible.
         These principles were first proposed over one hundred years ago by Gestalt Psychologist
         Max Wertheimer. The world of technology may have changed significantly since then, but
         the basics of human perception remain the same.
     </p>
-    <p>Join me in exploring Gestalt Psychology and its use in UX/UI Design.</p>
+    <h1><a id="perception" class="anchor">Psychology and Human Perception</a></h1>
+    <p>
+        In the early twentieth century, psychologist Max Wertheimer theorized that the mind and
+        body could not be separated when observing how people perceive their surroundings. This
+        led to the field of Gestalt psychology and the foundation for modern views of perception:
+        “Gestalt theory emphasized that the whole of anything is greater than its parts [3].”
+        We view our surroundings not piecemeal but in terms of whole objects [4]. Gestalt
+        psychologists identified what are now known as the classic principles of perceptual
+        grouping [5].
+    </p>
+    <figure style="float: right">
+        <img src="fig1.gif" alt="Examples of Gestalt grouping" width="300">
+        <figcaption>Figure 1: Adapted from The Oxford Handbook of Perceptual Organization, 2015</figcaption>
+    </figure>
+    <p>
+        Figure 1 shows some of these classic Gestalt principles of grouping [5].
+    </p>
+    <ul style="list-style-type: lower-alpha; padding: 4rem">
+        <li>No grouping</li>
+        <li>Proximity</li>
+        <li>Color</li>
+        <li>Shape</li>
+        <li>Size</li>
+        <li>Orientation</li>
+        <li>Common fate</li>
+        <li>Symmetry</li>
+        <li>Parallelism</li>
+        <li>Good continuation</li>
+        <li>Closure</li>
+    </ul>
+        <br>
+        <br>
+    <p>
+        Modern perceptual and cognitive psychologists have refined these classic ideas to create
+        new principles of grouping, quantified by measures of phenomenological psychophysics [6].
+    </p>
+    <ul style="list-style-type: disc; padding: 0 4rem">
+        <li>Common region</li>
+        <li>Synchrony</li>
+        <li>Element connectedness</li>
+        <li>Induced grouping</li>
+    </ul>
+    <p>
+        Together, these principles create a framework for effective UI/UX design.
+    </p>
+    <h1><a id="proximity" class="anchor">Proximity and Common Region</a></h1>
+    <p>
+        The principle of proximity states that objects that are closer to each other appear
+        related. Objects that are farther apart do not. In a set of studies in the late 90s,
+        Michael Kubovy demonstrated what became known as pure distance law. He showed that no
+        matter the orientation, grouping depended only on the relative distance between dots [5].
+    </p>
+    <p>
+        In UI/UX design, on-screen controls or data displays are often grouped in boxes. However,
+        the proximity principle shows that items can be visually grouped by spacing them closer
+        together than other controls, without visible borders. This use of whitespace to reduce
+        visual clutter in a user interface is recommended by graphic design experts [4].
+    </p>
+    <figure>
+        <img src="proximity.png" alt="Screenshot of Amazon.com" width="75%">
+        <figcaption>
+            Figure 2: This screenshot from Amazon shows the use of both proximity and common region groupings
+        </figcaption>
+    </figure>
+    <h1><a id="similarity" class="anchor">Similarity Grouping</a></h1>
+    <p>
+        Elements that share common visual properties often belong together. This is the basis for
+        the Gestalt grouping principle of similarity. Wertheimer seemed to favor a general
+        principle of similarity, describing it as “the tendency of like parts to band together.”
+        [5] In UI/UX design this can be further broken down into color, size, and shape.
+    </p>
+    <h2>Color</h2>
+    <figure>
+        <img src="similarity-color.png" alt="An example of color grouping">
+        <figcaption>Figure 3: Color relationship diagram by Smashing Magazine</figcaption>
+    </figure>
+    <p>
+        In UI/UX design, color theory, the set of principles regarding the use of color, focuses
+        on the aesthetic appeal of a design message [7]. However, in Gestalt principles, color is
+        the easiest and strongest tool to affect similarity. Figure 3 shows how color creates a
+        stronger grouping than even shape [8].
+    </p>
+    <h2>Size</h2>
+    <figure>
+        <img src="layercake.png" alt="Gazeplot from Nielsen Norman Group" width="50%">
+        <figcaption>Figure 4: This gazeplot shows an example of layer-cake scanning</figcaption>
+    </figure>
+    <p>
+        Size is another important tool for creating similarity. This can be seen in typography
+        where larger fonts are easily recognized as headers, giving users subconscious clues to
+        classify important points. The Nielsen Norman Group tracked how people scan webpages.
+        They found a “Layer-cake pattern” where readers scan the headings and subheadings
+        clearly indicated by size [9]. Using clear headings and subheadings, grouped by size,
+        allows users to quickly identify relevant information.
+    </p>
+    <h2>Shape</h2>
+    <figure>
+        <img src="shape.png" alt="The Microsoft Office lozenge">
+        <figcaption>Figure 5: Microsoft Office 2007 vs 2010</figcaption>
+    </figure>
+    <p>
+        Shape has the weakest grouping effect, but it can still have a profound effect on the
+        user. Consider the “lozenge” in Microsoft Office 2007 (Figure 5). Its shape and position
+        implied it was a non-functioning logo and not an important part of the menu. The lozenge
+        was retired in 2010 and replaced with the File menu [10].
+    </p>
+    <h1><a id="fate" class="anchor">Generalized Common Fate</a></h1>
+    <p>
+        The classic principle of common fate was described with reference to motion: “Elements
+        that move in the same direction are perceived as more related than elements that are
+        stationary or that move in different directions.” [11] This can be seen in dropdown
+        menus, accordions, and drawers, but it can also be implied through shading. Buttons in
+        UI/UX design are often shaded to look three dimensional; this conveys a sense of motion
+        into the 3D world. Studies in the early 2000s have demonstrated that common fate grouping
+        can be affected by common direction of luminance changes [5].
+    </p>
+    <figure>
+        <img src="peachpit.png" alt="Screenshot of peachpit.com" width="75%">
+        <figcaption>Figure 7: Peachpit.com has a clean dropdown menu demonstrating common fate</figcaption>
+    </figure>
+    <figure>
+        <img src="Onhover.jpg" alt="CSS shading effects on buttons">
+        <figcaption>Figure 8: Shading can create a sense of motion [12]</figcaption>
+    </figure>
+    <h1><a id="synchrony" class="anchor">Synchrony</a></h1>
+    <p>
+        Synchrony can be thought of as common fate through time. Visual elements that appear
+        at the same time are grouped together, even if they break other principles, such as
+        color, proximity, and size [13]. Flashing bulbs are perceived as a group, even when
+        arranged within unlit bulbs. In 1999, Lee and Blake showed that temporal synchrony of
+        changes in elements randomly distributed distinguishes the grouped elements [14].
+        Bottlenecks author David Evans describes advertisements inside slideshows, with
+        arrows designed to resemble the button to click for the next slide, as a perfect
+        example of synchrony used to trick the viewer.
+    </p>
+    <h1><a id="symmetry" class="anchor">Symmetry</a></h1>
+    <p>
+        Symmetry, especially along a vertical axis, improves detection of patterns in random
+        stimuli [5]. It is theorized that symmetry grouping helps highlight purposeful
+        deviations [13].
+    </p>
+    <figure>
+        <img src="symmetry_06.jpg" alt="Screenshot of http://www.adhamdannaway.com/">
+        <figcaption>Figure 9: Adham Dannaway uses deviations in symmetry to showcase both his designing and coding talents</figcaption>
+    </figure>
+    <h1><a id="continuation" class="anchor">Good Continuation and Closure</a></h1>
+    <p>
+        “The eye tends to build a relationship between elements, it fills in the gaps, and
+        identifies hidden motion in the design.” [13] Wertheimer suggested that good continuation
+        could be seen when a segment proceeds in a direction that “carr[ies] on the principle
+        logically demanded” from the original element [5]. The eyes will follow a shape, even
+        beyond its end point, until its logical conclusion.
+    </p>
+    <figure>
+        <img src="docicon.png" alt="Icon that looks like a pile of documents">
+        <figcaption>Figure 10: Icon representation of a stack of documents</figcaption>
+    </figure>
+    <p>
+        Closure is the ability of the human mind to fill in gaps. We try to close open figures
+        to perceive it as a whole object, rather than separate features. This can be seen when
+        Graphical User Interfaces (GUIs) represent collections of objects as stacks, with one
+        whole object showing and the edges of others “behind” it [4].
+    </p>
+    <figure>
+        <img src="WWF_logo.png" alt="The World Wildlife Fund logo" width="25%">
+        <figcaption>The World Wildlife Foundation logo is a perfect example of continuation</figcaption>
+    </figure>
+    <h1><a id="connect" class="anchor">Element Connectedness</a></h1>
+    <p>
+        Connecting distinct elements with a third element effectively competes against other
+        grouping principles [5]. The power of this principle can be seen in studies of patients
+        with Balint’s syndrome who can only perceive one object at a time. When patients were
+        presented with a screen showing two circles, they reported seeing only one. However,
+        when the circles were connected with a line, the patients could perceive both objects [15].
+    </p>
+    <figure>
+        <img src="connect.jpg" alt="Lines connect dots that are otherwise unconnected">
+        <figcaption>Figure 11 This figure shows the power of the principle of connectedness</figcaption>
+    </figure>
+    <h1><a id="induced" class="anchor">Induced Grouping</a></h1>
+    <p>
+        Grouping can be induced by placing elements with no basis for grouping in proximity to
+        those with their own grouping relationships [5]. Conversely, induced grouping can be
+        disrupted by “using common region to put the inducing set into a separate region of
+        space” [5]. This can be the most powerful grouping principle and should be used
+        carefully; there are ethical considerations to induced grouping. Contextual advertising
+        uses the principles of induced grouping to create ads that look like posts from friends
+        in Facebook or Twitter feeds [10]. This can be very effective, but also invites criticism.
+    </p>
+    <h1><a id="conclusion" class="anchor">Final Thoughts</a></h1>
+    <p>
+        Humans are wired to see our surroundings in terms of the whole [4]. We don’t see the
+        world as individual elements. Instead we see the gestalt of these elements: the box,
+        not the lines of its edges; the flock, not the individual birds; the navigation bar,
+        not each word or icon. User Interface/User Experience Design must be built on the
+        principles of human perception. The best design is designed for the user, not despite
+        the user.
+    </p>
+</div>
 </body>
 </html>

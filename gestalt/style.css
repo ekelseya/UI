@@ -1,0 +1,127 @@
+/*colors:
+    dark background: #3F4B3B
+    light accent: #3BEBCE
+    on hover background: #44633F*/
+/*RESET*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {line-height: 1;}
+ol, ul{list-style:none;}
+blockquote, q{quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;}
+:focus{outline:0;}
+ins{text-decoration:none;}
+del{text-decoration:line-through;}
+table{border-collapse:collapse; border-spacing:0;}
+body{font-family: 'Roboto', sans-serif}
+nav {
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #3F4B3B;
+}
+nav .me {
+    display: block;
+    float: left;
+    color: #3BEBCE;
+    padding: 1rem;
+    font-size: 4rem;
+    font-family: 'Allura', cursive;
+}
+nav ul {
+    list-style-type: none;
+    padding: 1rem 0;
+    overflow: hidden;
+}
+nav li a {
+    display: block;
+    float: right;
+    color: #3BEBCE;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+nav li a:hover{
+    background-color: #44633F;
+}
+.sidenav {
+    width: 12rem;
+    position: fixed;
+    z-index: 1;
+    top: 16rem;
+    left: 1rem;
+    background-color: #3BEBCE;
+    overflow-x: hidden;
+    padding: 1rem 0 1rem .5rem;
+}
+.sidenav a {
+    padding: .25rem;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #3F4B3B;
+    display: block;
+}
+.sidenav a:hover {
+    background-color: #44633F;
+    color: #3BEBCE;
+}
+.main {
+    padding-top: 8rem;
+    padding-left: 16rem;
+    padding-right: 8rem;
+}
+p {
+    line-height: 1.5;
+    vertical-align: baseline;
+    background: transparent;
+    padding: 1rem 0;
+    font-size: 1rem;
+}
+.anchor{padding-top: 8rem}
+h1{
+    font-size: 2rem;
+    color: #3F4B3B;
+    padding: 1rem 0;
+}
+h2{
+    font-size: 1.5rem;
+    color: #3F4B3B;
+    padding: 1rem 0;
+}
+li {line-height: 1.5rem}
+figcaption{font-size: x-small}
+.right{
+    float: right;
+}
+@media only screen and (max-width: 600px) {
+    nav {
+        padding: 1rem;
+        font-size: 1rem
+    }
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    nav li a {padding: 1rem .5rem 0 .5rem}
+    .sidenav {display: none}
+    .sidenav a {display: none}
+    .main {
+        margin: 0;
+        padding: 0;
+    }
+    body{padding: 0}
+}
